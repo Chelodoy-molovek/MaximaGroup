@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html{
+  background-color: #141414;
+width: 100%;
+height: 100%;
+}
+.preLoader {
+  position: fixed;
+  background-color: #141414;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.centerLogoItems {
+  position: absolute;
+  width: 310px;
+  height: 135px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+}
+.centerLogoItemsStyle {
+  background-color: #ffffff;
+  width: 70px;
+  opacity: 0;
+}
+.centerLogoLeftItem {
+  transform: rotate(45deg);
+}
+.centerLogoRightItem {
+  transform: rotate(-45deg);
+}
+.timer {
+  position: fixed;
+  color: #fff;
+  right: 0;
+  font-size: 160px;
+  font-style: normal;
+  font-weight: 350;
+  font-size: calc(5vw + 5vh);
+  opacity: 0;
+}
+.loadTextStyle {
+  color: white;
+  font-size: calc(3.5vw + 5vh);
+}
+.preLoaderTextLeftSide {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0%;
+  right: 50%;
+  opacity: 0;
+
+}
+.loaderLine {
+  height: 5px;
+  width: 31vw;
+  background-color: white;
+  display: none;
+}
+.preLoaderTextRightSide {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  opacity: 0;
+}
+.wordTHE {
+  margin-right: 15px;
+}
+/* .proverka{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 1) 0%, rgba(217, 217, 217, 1) 0%, rgba(217, 217, 217, 1) 0%, rgba(217, 217, 217, 1) 7%, rgba(0, 0, 0, 1) 79%);
+} */
+/* .centerLogoLoader{
+  position: fixed;
+  width: 20vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+} */
+@media only screen and (max-width: 1900px) {
+  .loadTextStyle {
+    color: white;
+    font-size: calc(3vw + 5vh);
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .loadTextStyle {
+    color: white;
+    font-size: calc(2.5vw + 3vh);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .loadTextStyle {
+    color: white;
+    font-size: calc(2vw + 2vh);
+  }
+}
